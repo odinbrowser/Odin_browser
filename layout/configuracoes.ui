@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Configurações</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/valknut.ico</normaloff>../img/valknut.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+background-color: #000000;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabConfig">
+     <property name="styleSheet">
+      <string notr="true">QObject#tabFavoritos{
+background-color: rgb(20,20,20);
+}</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabHistorico">
+      <property name="styleSheet">
+       <string notr="true">QObject#tabHistorico{
+background-color: rgb(20,20,20);
+}</string>
+      </property>
+      <attribute name="title">
+       <string>Histórico</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="1" column="0">
+        <widget class="QWidget" name="widHistorico" native="true">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="1">
+           <widget class="QPushButton" name="btnHisDeletarTodos">
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnHisDeletarTodos{
+color: #FFFFFF;
+background-color: rgb(0,0,0);
+border-style: solid;
+border-width: 1px;
+border-color: #7d0304;
+padding-top: 5px;
+padding-bottom: 5px;
+cursor: default;
+}
+QPushButton#btnHisDeletarTodos:hover{
+background-color: rgb(30,30,30);
+cursor: hand;
+}
+QPushButton#btnHisDeletarTodos:pressed{
+background-color: rgb(20,20,20);
+cursor: pointer;
+}</string>
+            </property>
+            <property name="text">
+             <string>Deletar Todos</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="btnHisIr">
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnHisIr{
+color: #FFFFFF;
+background-color: rgb(0,0,0);
+border-style: solid;
+border-width: 1px;
+border-color: #7d0304;
+padding-top: 5px;
+padding-bottom: 5px;
+cursor: default;
+}
+QPushButton#btnHisIr:hover{
+background-color: rgb(30,30,30);
+cursor: hand;
+}
+QPushButton#btnHisIr:pressed{
+background-color: rgb(20,20,20);
+cursor: pointer;
+}</string>
+            </property>
+            <property name="text">
+             <string>Ir</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="btnHisDeletar">
+            <property name="styleSheet">
+             <string notr="true">QPushButton#btnHisDeletar{
+color: #FFFFFF;
+background-color: rgb(0,0,0);
+border-style: solid;
+border-width: 1px;
+border-color: #7d0304;
+padding-top: 5px;
+padding-bottom: 5px;
+cursor: default;
+}
+QPushButton#btnHisDeletar:hover{
+background-color: rgb(30,30,30);
+cursor: hand;
+}
+QPushButton#btnHisDeletar:pressed{
+background-color: rgb(20,20,20);
+cursor: pointer;
+}</string>
+            </property>
+            <property name="text">
+             <string>Deletar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QScrollArea" name="sclHistorico">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(20, 20, 20);
+border: none</string>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>558</width>
+            <height>289</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
+            <widget class="QTableWidget" name="tblHistorico">
+             <property name="styleSheet">
+              <string notr="true">color: black;
+background-color: rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tabConfigGer">
+      <property name="styleSheet">
+       <string notr="true">QObject#tabConfigGer{
+background-color: rgb(20,20,20);
+}</string>
+      </property>
+      <attribute name="title">
+       <string>Configurações Gerais</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <widget class="QWidget" name="widConfigGer" native="true">
+         <widget class="QLabel" name="lblGerHomePage">
+          <property name="geometry">
+           <rect>
+            <x>8</x>
+            <y>9</y>
+            <width>200</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #FFFFFF;</string>
+          </property>
+          <property name="text">
+           <string>Página Inicial:</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="txtGerHomePage">
+          <property name="geometry">
+           <rect>
+            <x>6</x>
+            <y>32</y>
+            <width>200</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLineEdit#txtGerHomePage{
+color: black;
+background-color: rgb(255,255,255);
+border-style: solid;
+border-width: 1px;
+border-color: #7d0304;
+padding-top: 5px;
+padding-bottom: 5px;
+cursor: default;
+}</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnGerAlterar">
+          <property name="geometry">
+           <rect>
+            <x>6</x>
+            <y>66</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btnGerAlterar{
+color: #FFFFFF;
+background-color: rgb(0,0,0);
+border-style: solid;
+border-width: 1px;
+border-color: #7d0304;
+padding-top: 5px;
+padding-bottom: 5px;
+cursor: default;
+}
+QPushButton#btnGerAlterar:hover{
+background-color: rgb(30,30,30);
+cursor: hand;
+}
+QPushButton#btnGerAlterar:pressed{
+background-color: rgb(20,20,20);
+cursor: pointer;
+}</string>
+          </property>
+          <property name="text">
+           <string>Alterar</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnGerPadrao">
+          <property name="geometry">
+           <rect>
+            <x>88</x>
+            <y>66</y>
+            <width>117</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btnGerPadrao{
+color: #FFFFFF;
+background-color: rgb(0,0,0);
+border-style: solid;
+border-width: 1px;
+border-color: #7d0304;
+padding-top: 5px;
+padding-bottom: 5px;
+cursor: default;
+}
+QPushButton#btnGerPadrao:hover{
+background-color: rgb(30,30,30);
+cursor: hand;
+}
+QPushButton#btnGerPadrao:pressed{
+background-color: rgb(20,20,20);
+cursor: pointer;
+}</string>
+          </property>
+          <property name="text">
+           <string>Página padrão</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="lblGerDownload">
+          <property name="geometry">
+           <rect>
+            <x>8</x>
+            <y>110</y>
+            <width>200</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #FFFFFF;</string>
+          </property>
+          <property name="text">
+           <string>Download:</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnGerDownload">
+          <property name="geometry">
+           <rect>
+            <x>6</x>
+            <y>132</y>
+            <width>99</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btnGerDownload{
+color: #FFFFFF;
+background-color: rgb(0,0,0);
+border-style: solid;
+border-width: 1px;
+border-color: #7d0304;
+padding-top: 5px;
+padding-bottom: 5px;
+cursor: default;
+}
+QPushButton#btnGerDownload:hover{
+background-color: rgb(30,30,30);
+cursor: hand;
+}
+QPushButton#btnGerDownload:pressed{
+background-color: rgb(20,20,20);
+cursor: pointer;
+}</string>
+          </property>
+          <property name="text">
+           <string>Download</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnGerLeiame">
+          <property name="geometry">
+           <rect>
+            <x>112</x>
+            <y>132</y>
+            <width>93</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton#btnGerLeiame{
+color: #FFFFFF;
+background-color: rgb(0,0,0);
+border-style: solid;
+border-width: 1px;
+border-color: #7d0304;
+padding-top: 5px;
+padding-bottom: 5px;
+cursor: default;
+}
+QPushButton#btnGerLeiame:hover{
+background-color: rgb(30,30,30);
+cursor: hand;
+}
+QPushButton#btnGerLeiame:pressed{
+background-color: rgb(20,20,20);
+cursor: pointer;
+}</string>
+          </property>
+          <property name="text">
+           <string>LEIA-ME</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
