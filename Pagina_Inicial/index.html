@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Odin - Página Inicial</title>
+		
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="shortcut icon" href="img/valknut.ico"/>
+		
+		<script>
+			function chrome(){
+				var texto = document.getElementById('texto');
+				window.location.href = "https://www.google.com.br/search?sclient=psy-ab&site=&source=hp&q=" + texto.value;
+			}
+			function bing(){
+				var texto = document.getElementById('texto');
+				window.location.href = "https://www.bing.com/search?q=" + texto.value;
+			}
+			function yahoo(){
+				var texto = document.getElementById('texto');
+				window.location.href = "https://br.search.yahoo.com/search;_ylt=A0SO81zbl0RXDrIA7fzy6Qt.;_ylc=X1MDMjExNDcxMDAwMgRfcgMyBGZyAwRncHJpZAN4NlA2YWxHcFJwQy55cVJIRUxZTDJBBG5fcnNsdAMwBG5fc3VnZwMxMARvcmlnaW4DYnIuc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAwRxc3RybAM1BHF1ZXJ5A3Rlc3RlBHRfc3RtcAMxNDY0MTEzMTM2?p=" + texto.value;
+			}
+			function duckduckgo(){
+				var texto = document.getElementById('texto');
+				window.location.href = "https://duckduckgo.com/?q=" + texto.value;
+			}
+		</script>
+	</head>
+	<body>
+		<div class="form">
+			<input type="text" id="texto" placeholder="Pesquisa" title="Pesquisa">
+			<br><br><br>
+			<input onclick="chrome()" type="button" id="botao" class="chrome" value="" title="chrome"/>
+			<input onclick="bing()" type="button" id="botao" class="bing" value="" title="bing">
+			<br><br><br>
+			<input onclick="yahoo()" type="button" id="botao" class="yahoo" value="" title="yahoo">
+			<input onclick="duckduckgo()" type="button" id="botao" class="duckduckgo" value="" title="duckduckgo">
+		</div>
+	</body>
+</html>
